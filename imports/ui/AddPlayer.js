@@ -12,7 +12,7 @@ export default class AddPlayer extends Component {
       e.target.playerName.value = '';
       Players.insert({
         name: playerName,
-        score: 0
+        score: this.props.score
       });
     }
   }
