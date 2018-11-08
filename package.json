@@ -1,14 +1,16 @@
 {
-  "name": "meteor",
+  "name": "lumdb",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "meteor run"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
-    "meteor-node-stubs": "^0.4.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
