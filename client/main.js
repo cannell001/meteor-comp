@@ -4,6 +4,8 @@ import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
 
 import {Players} from './../imports/api/players';
+import TitleBar from './../imports/ui/TitleBar';
+
 
 const renderPlayers = (playersList) => {
   return playersList.map((player) => {
@@ -35,16 +37,6 @@ const handleSubmit = (e) => {
     });
   }
 };
-
-class TitleBar extends Component {
-  render() {
-    return (
-      <div>
-        <h1>My App 2</h1>
-      </div>
-    );
-  }
-}
 
 Meteor.startup(() => {
   Tracker.autorun(() => {
