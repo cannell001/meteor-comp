@@ -1,10 +1,10 @@
 import {Meteor} from 'meteor/meteor';
-import {Players} from './../imports/api/players';
+import {Ninjas} from './../imports/api/ninjas';
 
 Meteor.startup(function () {
   // Players.insert({
   //   name: 'Vikram',
   //   score: 99
   // });
-  console.log(Players.find().fetch());
+  console.log(Ninjas.find().fetch());
 });

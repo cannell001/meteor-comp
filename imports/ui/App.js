@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TitleBar from './TitleBar';
-import AddPlayer from './AddPlayer';
-import PlayerList from './PlayerList';
+import AddNinja from './AddNinja';
+import NinjaList from './NinjaList';
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
         <TitleBar title={this.props.title}/>
-        <PlayerList players={this.props.players}/>
-        <AddPlayer/>
+        <NinjaList ninjas={this.props.ninjas}/>
+        <AddNinja/>
       </div>
     );
   }
@@ -19,5 +19,5 @@ export default class App extends React.Component {
 
 App.propTypes = {
   title: PropTypes.string.isRequired,
-  players: PropTypes.array.isRequired
+  ninjas: PropTypes.array.isRequired
 };

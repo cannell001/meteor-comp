@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
 
-import {Players} from './../imports/api/players';
+import {Ninjas} from './../imports/api/ninjas';
 import App from './../imports/ui/App';
 
 Meteor.startup(() => {
   Tracker.autorun(() => {
-    let players = Players.find().fetch();
+    let ninjas = Ninjas.find().fetch();
     let title = 'Score Keep';
-    ReactDOM.render(<App title={title} players={players}/>, document.getElementById('app'));
+    ReactDOM.render(<App title={title} ninjas={ninjas}/>, document.getElementById('app'));
   });
 });
